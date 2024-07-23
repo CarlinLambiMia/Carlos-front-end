@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 16.6vh;
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#titulo{
+    margin-left: 35%;
+    font-size: 40px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    margin-right: 33vw;
+}
+
+nav ul li{
+    width: 120px;
+    margin: 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color:black;
+    transition: 0.5s;
+}
+
+.main {
+    height: 66.8vh;
+    background-image: url('../img/imagem.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 16.6vh;
+}
+
+a{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor:wait;
+    text-decoration: none;
+    color: white;
+}
+
+a span{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+footer a:hover{
+    color:black;
+    transition: 0.5s;
+}
