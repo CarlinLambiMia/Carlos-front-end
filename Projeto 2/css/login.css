@@ -1,0 +1,19 @@
+:root {
+    --cor1: #434343
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+.container {
+    background-color: #636262;
+}
+
+input {
+    background-color: #9C9C9C;
+}
+
+#user {
+    color: white;
+}
