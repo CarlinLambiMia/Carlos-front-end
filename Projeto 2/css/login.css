@@ -8,6 +8,9 @@ body {
 
 .container {
     background-color: #636262;
+    display: flex;
+    justify-content: center;
+    
 }
 
 input {
@@ -15,5 +18,17 @@ input {
 }
 
 #user {
+    color: white;
+}
+
+#Email {
+    color: white;
+}
+
+#Senha {
+    color: white;
+}
+
+#login {
     color: white;
 }
