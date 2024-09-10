@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #8a8a8a;
+    color: #333;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+}
+
+#home img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: left;
+    width: 97.5%;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    margin-right: 0.4rem;
+}
+
+@media (max-width: 768px) {
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+#home h1 {
+    font-size: 2rem;
+}
+
+#home img {
+    width: 120px;
+    height: 120px;
+}
+
+#home p {
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+footer {
+    padding: 0.8rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer ul li {
+    margin-bottom: 0.8rem;
+}
+}
+
+@media (max-width: 480px) {
+nav ul li {
+    margin: 0.75rem 0;
+}
+
+#home h1 {
+    font-size: 1.8rem;
+}
+
+#home img {
+    width: 100px;
+    height: 100px;
+}
+
+#home p {
+    font-size: 0.9rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer ul li a {
+    font-size: 0.9rem;
+}
+
+footer {
+    padding: 0.5rem;
+}
+}
