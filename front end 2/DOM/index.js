@@ -19,19 +19,24 @@
 // boi.remove()
 // body.appendChild(ancora)
 
-const body = document.querySelector('body');
-const lista = document.createElement('ul')
+//tarefa de criar uma lista em js para o html
+// const body = document.querySelector('body');
+// body.style.backgroundColor = "black"
+// const lista = document.createElement('ul')
+// lista.style.color = "pink"
+// const h1 = document.querySelector('h1');
+// h1.style.color = "pink"
 
-const a = document.createElement('li')
-const b = document.createElement('li')
-const c = document.createElement('li')
+// const a = document.createElement('li')
+// const b = document.createElement('li')
+// const c = document.createElement('li')
 
-a.textContent = 'lista-1'
-b.textContent = 'lista-1'
-c.textContent = 'lista-1'
+// a.textContent = 'lista-1'
+// b.textContent = 'lista-1'
+// c.textContent = 'lista-1'
 
-lista.append(a)
-lista.append(b)
-lista.append(c)
+// lista.append(a)
+// lista.append(b)
+// lista.append(c)
 
-body.append(lista)
+// body.append(lista)
