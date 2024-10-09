@@ -1,22 +1,22 @@
 const body = document.querySelector('body');
 const itensMenu = [
-    {nome: 'Inicio', url: 'index.html'},
-    {nome:'Sobre', url: 'sobre.html'},
-    {nome: 'Contato', url:'contato.html'}
+    { nome: 'Início', url: 'index.html' },
+    { nome: 'Sobre', url: 'sobre.html' },
+    { nome: 'Contato', url: 'contato.html' }
 ];
+
 function criarMenu() {
-    const header = document.createElement('header')
-    header.style.backgroundColor = '#071D41'
-    const nav = document.createElement('nav' in header)
-    nav.style.backgroundColor = 'pink'
-    const ul = document.createElement('ul' in nav)
-    ul.style.color = 'red'
+    const header = document.createElement('header');
+    header.style.backgroundColor = '#071D41';
+    const nav = document.createElement('nav');
+    const ul = document.createElement('ul');
+    return { header, nav, ul };
 }
 
-function usarMenu(){
+function usarMenu() {
+    const { header, nav, ul } = criarMenu();
     header.style.backgroundColor = '#071D41';
     header.style.fontFamily = 'Arial, sans-serif';
-
     ul.style.height = '40px';
     ul.style.display = 'flex';
     ul.style.justifyContent = 'center';
@@ -26,22 +26,22 @@ function usarMenu(){
     ul.style.margin = '0';
     ul.style.padding = '0';
 
-    itensMenu.forEach(item =>{
-        const li = document.createElement ('li')
+    itensMenu.forEach(item => {
+        const li = document.createElement('li');
         const a = document.createElement('a');
         a.textContent = item.nome;
-        a.href = '#';
+        a.href = item.url;
         a.style.textDecoration = 'none';
         a.style.color = 'white';
-    
+
         li.appendChild(a);
         ul.appendChild(li);
-    })
-    
-    nav.appendChild(ul)
-    header.appendChild(nav)
-    document.body.prepend(header)
+    });
+
+    nav.appendChild(ul);
+    header.appendChild(nav);
+
+    document.body.prepend(header);
 }
 
-criarMenu()
-usarMenu()
+usarMenu();
