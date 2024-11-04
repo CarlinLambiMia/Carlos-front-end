@@ -8,6 +8,6 @@ miniaturas.forEach(miniatura => {
         })
         imgAmpliada.src = miniatura.src;
         imgAmpliada.style.display = 'block';
-        imgAmpliada.style.opacity = '1';
+        miniatura.style.opacity = '1';
     })
 })
