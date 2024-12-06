@@ -1,0 +1,12 @@
+.card {
+    margin:auto;
+    border: 1px solid #ddd;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome{
+    color: aqua;
+}
